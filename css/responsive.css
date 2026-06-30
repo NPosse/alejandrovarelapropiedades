@@ -239,6 +239,20 @@ font-size:38px;
 
 }
 
+.floating{
+
+width:60px;
+
+height:60px;
+
+bottom:20px;
+
+right:20px;
+
+font-size:30px;
+
+}
+
 }
 
 /* HERO WORDS MOBILE */
@@ -303,6 +317,289 @@ transform:
 translateY(0);
 
 }
+
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+.menu-toggle{
+
+display:flex;
+
+}
+
+
+
+.nav-links{
+
+position:fixed;
+
+top:0;
+
+right:-100%;
+
+width:100%;
+
+height:100vh;
+
+background:white;
+
+display:flex !important;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+gap:40px;
+
+transition:.4s;
+
+z-index:999;
+
+}
+
+
+
+.nav-links.active{
+
+right:0;
+
+}
+
+
+
+.btn-nav{
+
+display:none;
+
+}
+
+
+
+/* X */
+
+.menu-toggle.active span:nth-child(1){
+
+transform:
+
+rotate(45deg)
+
+translate(6px,7px);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+opacity:0;
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+transform:
+
+rotate(-45deg)
+
+translate(6px,-7px);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cta-banner{
+
+height:500px;
+
+background-attachment:scroll;
+
+}
+
+.overlay h2{
+
+font-size:42px;
+
+}
+
+.overlay p{
+
+font-size:18px;
+
+}
+
+}
+
+/* ==========================
+   PROCESS RESPONSIVE
+========================== */
+
+@media (max-width: 992px){
+
+.process{
+
+background-attachment:scroll;
+
+padding:100px 6%;
+
+}
+
+.process-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.process h2{
+
+font-size:42px;
+
+}
+
+.step{
+
+padding:30px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.process{
+
+padding:80px 5%;
+
+}
+
+.process-grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.process h2{
+
+font-size:34px;
+
+}
+
+.process-header p{
+
+font-size:17px;
+
+}
+
+.step{
+
+padding:28px;
+
+}
+
+.number{
+
+width:65px;
+
+height:65px;
+
+font-size:22px;
+
+}
+
+.step h3{
+
+font-size:24px;
+
+}
+
+}
+
+/* ==========================
+   PROPERTY DETAIL
+========================== */
+
+@media(max-width:992px){
+
+.property-detail{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+.property-summary{
+
+position:static;
+
+}
+
+.main-image img{
+
+height:420px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.breadcrumb{
+
+padding:110px 6% 30px;
+
+}
+
+.property-detail{
+
+padding:0 6% 80px;
+
+}
+
+.gallery-thumbs{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.property-summary h1{
+
+font-size:36px;
+
+}
+
+.property-summary h2{
+
+font-size:32px;
+
+}
+
+.quick-features{
+
+grid-template-columns:1fr;
+
+}
+
+.property-description{
+
+padding:0 6% 80px;
+
+}
+
+.property-description h2{
+
+font-size:32px;
 
 }
 

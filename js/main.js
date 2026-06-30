@@ -121,3 +121,57 @@ nav.classList.remove(
 });
 
 });
+
+
+/* ==========================
+        SCROLL ANIMATION
+========================== */
+
+const reveals = document.querySelectorAll(".reveal");
+
+const revealOnScroll = () => {
+
+    reveals.forEach(section => {
+
+        const windowHeight = window.innerHeight;
+        const revealTop = section.getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if(revealTop < windowHeight - revealPoint){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+};
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+/* ==========================
+        GALERÍA PROPIEDAD
+========================== */
+
+const mainPhoto = document.getElementById("mainPhoto");
+const thumbs = document.querySelectorAll(".thumb");
+
+if(mainPhoto && thumbs.length){
+
+    thumbs.forEach(thumb=>{
+
+        thumb.addEventListener("click",()=>{
+
+            mainPhoto.src = thumb.src;
+
+            thumbs.forEach(img=>img.classList.remove("active"));
+
+            thumb.classList.add("active");
+
+        });
+
+    });
+
+}
