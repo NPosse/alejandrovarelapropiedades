@@ -1,4 +1,4 @@
-const API_KEY = "454c6ed4a3d5b8412eb5eced8391f0e9e97c6564";
+const API_KEY = "";
 
 const URL = `https://www.tokkobroker.com/api/v1/property/?lang=es_ar&key=${API_KEY}`;
 
